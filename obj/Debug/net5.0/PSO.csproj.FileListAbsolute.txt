@@ -1,0 +1,16 @@
+C:\Users\LUIS CASANOVA\source\repos\PSO\bin\Debug\net5.0\PSO.exe
+C:\Users\LUIS CASANOVA\source\repos\PSO\bin\Debug\net5.0\PSO.deps.json
+C:\Users\LUIS CASANOVA\source\repos\PSO\bin\Debug\net5.0\PSO.runtimeconfig.json
+C:\Users\LUIS CASANOVA\source\repos\PSO\bin\Debug\net5.0\PSO.runtimeconfig.dev.json
+C:\Users\LUIS CASANOVA\source\repos\PSO\bin\Debug\net5.0\PSO.dll
+C:\Users\LUIS CASANOVA\source\repos\PSO\bin\Debug\net5.0\ref\PSO.dll
+C:\Users\LUIS CASANOVA\source\repos\PSO\bin\Debug\net5.0\PSO.pdb
+C:\Users\LUIS CASANOVA\source\repos\PSO\obj\Debug\net5.0\PSO.csproj.AssemblyReference.cache
+C:\Users\LUIS CASANOVA\source\repos\PSO\obj\Debug\net5.0\PSO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LUIS CASANOVA\source\repos\PSO\obj\Debug\net5.0\PSO.AssemblyInfoInputs.cache
+C:\Users\LUIS CASANOVA\source\repos\PSO\obj\Debug\net5.0\PSO.AssemblyInfo.cs
+C:\Users\LUIS CASANOVA\source\repos\PSO\obj\Debug\net5.0\PSO.csproj.CoreCompileInputs.cache
+C:\Users\LUIS CASANOVA\source\repos\PSO\obj\Debug\net5.0\PSO.dll
+C:\Users\LUIS CASANOVA\source\repos\PSO\obj\Debug\net5.0\ref\PSO.dll
+C:\Users\LUIS CASANOVA\source\repos\PSO\obj\Debug\net5.0\PSO.pdb
+C:\Users\LUIS CASANOVA\source\repos\PSO\obj\Debug\net5.0\PSO.genruntimeconfig.cache
