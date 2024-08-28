@@ -48,7 +48,7 @@ namespace PSO.Clases
             double[] mejor_posicion_global = new double[dimensiones];
             double gBest = double.MaxValue;
 
-            // Initialize particles
+            //Inicializar las partículas
             for (int i = 0; i < NUMERO_PARTICULAS; i++)
             {
                 particulas[i] = new Particula(dimensiones);
