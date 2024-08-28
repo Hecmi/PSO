@@ -9,9 +9,12 @@ namespace PSO.ArbolExpresiones
     public class AST
     {
         public Nodo RAIZ;
+        public List<string> INCOGNITAS;
 
         public AST(string expresion)
         {
+            INCOGNITAS = new List<string>();
+
             RAIZ = construir_arbol(expresion);
         }
 
@@ -27,14 +30,28 @@ namespace PSO.ArbolExpresiones
 
                 //En caso de que esa un número o una incógnita, entonces
                 //continuar acumulando la operación mientras en la expresión sea numérica (entera o decimal)
-                if (char.IsLetterOrDigit(c))
+                if (char.IsDigit(c) || c == '.')
                 {
-                    string operando = c.ToString();
-                    while (i + 1 < expresion.Length && (char.IsLetterOrDigit(expresion[i + 1]) || expresion[i + 1] == '.'))
+                    string numero = c.ToString();
+                    while (i + 1 < expresion.Length && (char.IsDigit(expresion[i + 1]) || expresion[i + 1] == '.'))
                     {
-                        operando += expresion[++i];
+                        numero += expresion[++i];
                     }
-                    nodos.Push(new Nodo(operando));
+                    nodos.Push(new Nodo(numero));
+                }
+                else if (char.IsLetter(c))
+                {
+                    // Acumulación de incógnitas
+                    string incognita = c.ToString();
+
+                    while (i + 1 < expresion.Length && char.IsLetterOrDigit(expresion[i + 1]))
+                    {
+                        incognita += expresion[++i];
+                    }
+
+                    nodos.Push(new Nodo(incognita));
+
+                    if (!INCOGNITAS.Contains(incognita)) INCOGNITAS.Add(incognita);
                 }
                 else if (c == '(')
                 {

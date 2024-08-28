@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PSO.Clases
 {
@@ -14,6 +15,16 @@ namespace PSO.Clases
         private Random random = new Random();
 
         public PSO(int NUMERO_PARTICULAS, int ITERACIONES, double W, double C1, double C2)
+        {
+            this.NUMERO_PARTICULAS = NUMERO_PARTICULAS;
+            this.ITERACIONES = ITERACIONES;
+
+            this.W = W;
+            this.C1 = C1;
+            this.C2 = C2;
+        }
+
+        public PSO(int NUMERO_PARTICULAS, int ITERACIONES, double W, double C1, double C2, List<string> incognitas)
         {
             this.NUMERO_PARTICULAS = NUMERO_PARTICULAS;
             this.ITERACIONES = ITERACIONES;

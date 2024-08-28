@@ -20,6 +20,11 @@ namespace PSO
                 { "y", 100 },
             };
 
+            for(int i = 0; i < ast.INCOGNITAS.Count; i++)
+            {
+                Console.WriteLine(ast.INCOGNITAS[i]);
+            }
+
             double resultado = ast.evaluar(valores_incognitas);
             Console.WriteLine(resultado);
 
